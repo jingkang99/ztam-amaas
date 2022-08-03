@@ -1,0 +1,36 @@
+
+
+[server]
+	host = "172.111.0.1"
+	port = 6666
+	seed = "911f43a041afa5604b626c6e1e493df09e74"
+
+	auth_table = "zt_client"
+	data_dir = "/manis/data"
+	allow_root = true
+	tunnel_proxy_cert_file = "/manis/etc/server.crt"
+	tunnel_proxy_key_file  = "/manis/etc/server.key"
+	guacd_address = "127.0.0.1:4822"
+
+[log]
+	file  = "./devop.log"
+	level = "debug"
+
+[dbconf]
+	type = "mysql"
+	host = "192.168.0.1"
+	port = 3306
+	user = "kkkk"
+	pass = ""
+	schm = "ztam"
+
+[client]
+	server = "222.249.238.98:8010"
+	fingerprint = "9c:be:4b:af:84:c2:35:35:be:b0:9f:f4:f8:e7:0b:21"
+	auth = "clientSAT617:41izGAXu:UGZtGI"
+	allow_root = true
+	data_dir = "/manis/data"
+
+[connection]
+	keep_alive = '30s'
+	max_retry_interval = '5m'
