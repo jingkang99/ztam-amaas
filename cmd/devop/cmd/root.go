@@ -31,9 +31,7 @@ func init() {
 
 	rootCmd.PersistentFlags().StringVarP(&global.CFile, "config", "c", "", "specify config file")
 	rootCmd.PersistentFlags().BoolVarP(&Debug, "debug", "d", false, "debug mode, print more info")
-	
-	fmt.Println(Debug)
-	
+
 	global.Debug = Debug
 	
 }
@@ -75,6 +73,3 @@ func initConfig() {
 		viper.Debug()
 	}
 }
-
-
-
